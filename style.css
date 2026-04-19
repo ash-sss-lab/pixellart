@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.main {
+    color: white;
+    padding: em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-color: black;
+    border-radius: 3px;
+    text-align: center
+}
+
+.welcome {
+    background-color: black;
+    color: white;
+    margin: 2px;
+}
+
+.contacts_name {
+    background-color: black;
+    color: white;
+    margin: 2px;
+}
+
+.contacts {
+    color: white;
+    padding: em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-color: black;
+    border-radius: 3px;
+    text-align: left ;
+}
+
+.info {
+    color: white;
+    padding: em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-color: black;
+    border-radius: 3px;
+    text-align: left ;
+}
+
+.info_name {
+    background-color: black;
+    color: white;
+    margin-top: 70px;
+}
+
+.button {
+    border-radius: 7px;
+    padding: 1em;
+    background: rgb(20, 5, 2);
+    color: rgb(255, 255, 255);
+    transform: none;
+    cursor: pointer;
+    box-shadow: none;
+    transition-property: box-shadow, transform;
+    transition-duration: .2s ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover {
+    box-shadow: 2px 2px 5px 2px #2e2b2b;
+    transform: scale(1.05) rotate(5deg);
+    transition-duration: .0.5s;
+    transition: box-shadow .2s linear, transform .2s linear;
+}
+
+.button:active {
+    transition-property: box-shadow, transform;
+    box-shadow: none;
+    transform: none;
+    transition: box-shadow .2s linear, transform .2s linear;
+}
