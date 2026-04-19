@@ -1,0 +1,76 @@
+.field-container {
+    width: 100 %;
+    height: 100 %;
+    display: flex;
+    background-color: darkcyan;
+    align-items: center;
+    justify-content: center;
+    gap: 16 px;
+    padding: 20 px;
+}
+
+.field {
+    width: 60 vw;
+    height: 30 vw;
+    background-color: darkturquoise;
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    gap: 1 px;
+}
+
+.cell {
+    background-color: rgb(62, 62, 62);
+    cursor: pointer;
+}
+
+.color-palette {
+    display: flex;
+    flex-direction: column;
+    gap: 10 px;
+    background-color: darkcyan;
+    padding: 10 px;
+}
+
+.color-cell {
+    width: 40 px;
+    height: 40 px;
+    cursor: pointer;
+    border: 2 px solid white;
+    border-radius: 5 px;
+}
+
+.color-cell.red { background-color: rgb(186, 19, 19); }
+.color-cell.orange { background-color: rgb(255, 153, 21); }
+.color-cell.green { background-color: rgb(147, 215, 10); }
+.color-cell.blue { background-color: rgb(5, 57, 146); }
+.color-cell.yellow { background-color: rgb(255, 247, 20); }
+.color-cell.skyblue { background-color: rgb(142, 229, 255); }
+
+.color-cell.selected {
+    border: 3 px solid black;
+    transform: scale(1.1);
+}
+
+.tool-cell {
+    width: 40 px;
+    height: 40 px;
+    cursor: pointer;
+    border: 2 px solid white;
+    border-radius: 5 px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}
+
+.tool-cell img {
+    width: 25 px;
+    height: 25 px;
+}
+
+.tool-cell.selected {
+    border: 3 px solid black;
+    background-color: darkgray;
+}
+
